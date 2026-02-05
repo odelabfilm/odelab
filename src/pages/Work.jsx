@@ -19,7 +19,7 @@ const Work = () => {
           Work
         </h1>
         <p className="font-mono text-xs md:text-sm text-white/50 mt-3 md:mt-0">
-          SELECTED PROJECTS <br />
+          Project With Odelab <br />
         </p>
       </motion.div>
 
