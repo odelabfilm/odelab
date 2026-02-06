@@ -40,15 +40,15 @@ const Work = () => {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link to={`/work/${project._id}`} className="group block">
-                  {/* Thumbnail Container - 원본 비율 유지 */}
+                  {/* Thumbnail Container */}
                   <div
-                    className={`relative overflow-hidden rounded-sm ${thumbnail ? "" : "bg-neutral-800 aspect-video"}`}
+                    className={`relative aspect-video overflow-hidden rounded-sm ${thumbnail ? "" : "bg-neutral-800"}`}
                   >
                     {thumbnail && (
                       <img
                         src={thumbnail}
                         alt={project.title}
-                        className="w-full h-auto block transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                     )}
 

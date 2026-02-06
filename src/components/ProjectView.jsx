@@ -111,17 +111,17 @@ const ProjectView = ({ data }) => {
               Still Cuts
             </h3>
 
-            {/* 스틸컷: 2.39:1 시네마스코프 비율 */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
+            {/* 스틸컷: 원본 비율 유지 */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5 items-start">
               {data.images.map((img, idx) => (
                 <div
                   key={idx}
-                  className="group relative overflow-hidden rounded-md md:rounded-lg bg-black aspect-[2.39/1] shadow-lg"
+                  className="group relative overflow-hidden rounded-md md:rounded-lg bg-black shadow-lg"
                 >
                   <img
                     src={img}
                     alt={`Still ${idx}`}
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-in-out"
+                    className="w-full h-auto block opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-in-out"
                   />
                   {/* 살짝 어두운 오버레이가 호버시 밝아지는 효과 추가 */}
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
