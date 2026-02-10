@@ -53,7 +53,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="http://pf.kakao.com/_xxxx"
+              href="http://pf.kakao.com/_xgbTmn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl md:text-3xl hover:scale-110 transition-transform hover:text-[#FEE500]"
